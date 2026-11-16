@@ -1,0 +1,227 @@
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .weather {
+            display: flex;
+            /* background-color: rgb(128, 204, 240); */
+            width: 100%;
+            height: 300vh;
+
+            .hero {
+                /* background-color: azure; */
+                background-image: url(../img/ablueumbrella.png);
+                background-position-y: 60px;
+                background-position-x: -90px;
+
+                background-size: cover;
+                width: 15%;
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .hreoall {
+                    /* background-color: aquamarine; */
+
+
+                    .allcar button {
+                        background-color: rgba(52, 69, 82, 0.5);
+                        width: 100px;
+                        height: 50px;
+                        margin-top: 30px;
+                        font-size: 26px;
+                        color: aliceblue;
+                        text-align: center;
+                        line-height: 45px;
+                        border: 3px solid rgba(248, 240, 218, 0.85);
+                        border-radius: 30px;
+                        box-shadow: 0px 0px 8px rgb(212, 236, 185);
+
+                        &:hover {
+                            background-color: rgba(130, 158, 180, 0.5);
+                            transform: scale(1.1);
+
+                        }
+
+                        &:active{
+                            background-color: #FFF0E6;
+                            color: #ecbe4a;
+                            transform: scale(0.9);
+                        }
+                    }
+
+                }
+
+
+            }
+
+            .data-region {
+                /* background-color: beige; */
+                flex: 1;
+                display: flex;
+
+                .cards {
+                    /* background-color: azure; */
+                    width: 100%;
+                    height: 250px;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 32px;
+                    margin: 20px;
+
+
+                    .card {
+                        background-color: rgb(173, 230, 230);
+                        background-image: url(../img/pngwing.com\ \(6\).png);
+                        width: 100%;
+                        height: 250px;
+                        border-radius: 30px;
+                        position: relative;
+                        box-shadow: 0px 0px 5px lightgrey;
+
+
+
+                        .text {
+                            background-color: rgb(253, 248, 242);
+
+                            width: 250px;
+                            height: 30%;
+                            margin: 20px;
+                            border-radius: 50px;
+                            color: rgb(153, 194, 182);
+                            font-style: normal;
+                            font-family: "jf open 粉圓", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+                            font-weight: 600;
+                            font-size: 48px;
+                            line-height: 80px;
+                            letter-spacing: 5px;
+                            text-align: center;
+                            position: relative;
+
+                        }
+
+
+                        .temp {
+                            /* background-color: bisque; */
+                            width: 90px;
+                            height: 100px;
+                            position: relative;
+                            left: 65px;
+                            top: -120px;
+                            color: rgb(220, 248, 239);
+                            font-style: normal;
+                            font-family: "jf open 粉圓", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+                            font-weight: 600;
+                            font-size: 60px;
+                            line-height: 70px;
+                            text-shadow: 0px 0px 5px rgb(135, 177, 143);
+
+
+                        }
+
+                        .chance {
+                            width: 90px;
+                            height: 90px;
+                            position: absolute;
+                            left: 45%;
+                            top: 70%;
+                            color: rgb(220, 248, 239);
+                            font-style: normal;
+                            font-family: "jf open 粉圓", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+                            font-weight: 600;
+                            font-size: 38px;
+                            line-height: 50px;
+                            text-shadow: 0px 0px 5px rgb(135, 177, 143);
+
+                            .chanceimg {
+                                /* background-color: aqua; */
+                                width: 40px;
+                                height: 40px;
+                                background-image: url(../img/pngwi6.png);
+                                background-position: center;
+                                background-size: cover;
+                                position: relative;
+                                top: -43px;
+                                left: -45px;
+
+
+                            }
+                        }
+
+                        .Vibes {
+                            background-color: rgb(142, 185, 122);
+                            background: url(../img/pngwing.com\ \(6\).png), linear-gradient(transparent 60%, #FFE484 60%);
+                            width: 200px;
+                            height: 35px;
+                            border-radius: 30px;
+
+                            position: relative;
+                            top: -100px;
+                            left: 60px;
+                            box-shadow: 0px 0px 5px peru;
+                            background-color: #FFFDF7;
+                            /* 奶油白背景 */
+                            border: 3px solid #FFE4A0;
+                            /* 暖黃色可愛邊框 */
+                            color: #5c4b51ce;
+                            /* 溫柔的深可可色，比純黑更可愛 */
+                            text-shadow: 2px 2px 0px #FFF0E6;
+                            text-align: center;
+                            line-height: 35px;
+
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+
+        .weathericon {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background-position: center;
+            background-size: contain;
+            position: relative;
+            left: 230px;
+            top: -115px;
+
+        }
+
+        .MostlyClearimg {
+            background-image: url(../img/pngwing.com.png);
+            background-color: rgb(156, 205, 232);
+        }
+
+        .stysun {
+            background-image: url(../img/stysun.png);
+            background-color: rgb(220, 235, 243);
+        }
+
+        .sunSmile {
+            background-image: url(../img/sunSmile.png);
+            background-color: rgb(220, 235, 243);
+        }
+
+        .rain {
+            background-image: url(../img/rain.png);
+            background-color: rgb(74, 94, 105);
+        }
+
+        .rain2 {
+            background-image: url(../img/rain2.png);
+            background-color: rgb(74, 94, 105);
+        }
+
+        .StrongWind {
+            background-image: url(../img/StrongWind.png);
+            background-color: rgb(74, 94, 105);
+        }
